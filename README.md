@@ -1,8 +1,8 @@
-# Ambiente TypeScript com Node Basico com Authenticação
+# Ambiente TypeScript/Node Basico e com Authenticação
 
 | :placard: API em NodeJS |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Ambiente TypeScript com Node Basico com Authenticação**
+| :sparkles: Nome        | **Ambiente TypeScript/Node Basico e com Authenticação**
 | :label: Tecnologias | TypeScript, NodeJs, Jest
 | :tv: Youtube | [Setup para apps Node.js (TypeScript, ESLint, Jest, Babel) | Code/Drops #33](https://www.youtube.com/watch?v=rCeGfFk-uCk)
 
