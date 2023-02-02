@@ -1,4 +1,4 @@
 
-export interface IDelete {
+export interface IDeleteRepository {
     delete(id: string): Promise<void>;
 }
