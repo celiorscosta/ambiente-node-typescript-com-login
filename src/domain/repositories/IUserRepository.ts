@@ -1,6 +1,6 @@
 import { User } from "../entities/User";
-import { ICRUD } from "./base/ICrudRepository";
+import { ICrudBase } from "./base/ICrudBase";
 
-export interface IUserRepository extends ICRUD<User> {
+export interface IUserRepository extends ICrudBase<User> {
     findByEmail(email: string): Promise<User | null>;
 }
