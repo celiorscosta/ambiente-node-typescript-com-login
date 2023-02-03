@@ -8,7 +8,12 @@ const makeSut = (): UserRepository => {
 describe("UserRepository", () => {
     it("should be able to create a user", async () => {
         const sut = makeSut();
-        const user = new User(null, "Lucas", "email@email.com", "password");
+        const user = new User({
+            id: null,
+            name: "Lucas",
+            email: "lucas@email.com",
+            password: "password",
+        });
 
         const createdUser = await sut.create(user);
         expect(createdUser).toEqual(user);
@@ -16,7 +21,12 @@ describe("UserRepository", () => {
 
     it("should be able to find a user by email", async () => {
         const sut = makeSut();
-        const user = new User(null, "Lucas", "email@email.com", "password");
+        const user = new User({
+            id: null,
+            name: "Lucas",
+            email: "lucas@email.com",
+            password: "password",
+        });
         const createdUser = await sut.create(user);
         const foundUser = await sut.findByEmail("email@email.com");
         expect(foundUser).toEqual(createdUser);
